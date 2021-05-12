@@ -1,4 +1,8 @@
 #!/bin/bash
+mkdir /scripts
+wget -O /scripts/setup.sh https://raw.githubusercontent.com/N1ghtm4r3x/setup-scripts/main/setup.sh
+chmod +x /scripts/setup.sh
+ln /scripts/setup.sh /usr/bin/softinstall
 read -p "Would you like to update the system?  (y/n): " -n 1 -r
 if [[ $REPLY =~ ^[Yy]$ ]]
 then
@@ -18,4 +22,3 @@ if [[ $REPLY =~ ^[Yy]$ ]]
 then
     reboot
 fi
-
