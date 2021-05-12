@@ -22,8 +22,7 @@ do
             echo "===================================================================================================="
             echo "= Installing wireguard & required packages, please use default port or write the custom port down. ="
             echo "===================================================================================================="
-            wget https://git.io/wireguard -O wireguard-install.sh && bash wireguard-install.sh
-            mkdir /scripts
+            wget https://git.io/wireguard -O wireguard-install.sh && bash wireguard-install.sh            
             mv wireguard-install.sh /scripts
             chmod +x /scripts/wireguard-install.sh
             ln /scripts/wireguard-install.sh /usr/bin/wgadd
