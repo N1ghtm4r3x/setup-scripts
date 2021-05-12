@@ -1,5 +1,4 @@
 #!/bin/bash
-# Bash Menu Script Example
 ip4=$(ip -4 addr show eth0 | grep -oP '(?<=inet\s)\d+(\.\d+){3}')
 PS3='Please select the software you would like to install (please press enter to see the menu again): '
 options=("Adguard" "Wireguard" "Docker" "Quit")
