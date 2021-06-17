@@ -20,7 +20,7 @@ echo "iface "$nic" inet static" >> /etc/network/interfaces
 echo "    address "$ip4"/24"  >> /etc/network/interfaces
 echo "    gateway "$gateway"" >> /etc/network/interfaces
 echo "The following ipv4 address has been set: "$ip4""
-echo "A reboot is required to finalize network settings, please run setup.sh afterwards"
+echo "A reboot is required to finalize network settings, please run softinstall afterwards"
 read -p "Would you like to reboot? (y/n): " -n 1 -r
 if [[ $REPLY =~ ^[Yy]$ ]]
 then
